@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message Trade {
+  string symbol = 1;
+  double position = 2;
+}
+
+message SymbolPos {
+  string strategy_name = 1;
+  string symbol = 2;
+  double net_position = 3;
+  int64 timestamp = 4;
+}
